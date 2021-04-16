@@ -97,7 +97,7 @@ monthly_covid_data['case_fatality_rate'] = fatality_rates
 
 # put the columns in the correct order
 # rearranging the columns
-column_names = ['location','month','case_fatality_rate','total_cases','total_cases','new_cases','total_deaths','new_deaths']
+column_names = ['location','month','case_fatality_rate','total_cases','new_cases','total_deaths','new_deaths']
 monthly_covid_data = monthly_covid_data.reindex(columns = column_names)
 
 # export as csv and print the first 5 rows
