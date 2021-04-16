@@ -102,4 +102,4 @@ monthly_covid_data = monthly_covid_data.reindex(columns = column_names)
 
 # export as csv and print the first 5 rows
 print(monthly_covid_data.head())
-monthly_covid_data.to_csv(r'owid-covid-data-2020-monthly.cvs')
+monthly_covid_data.to_csv(r'owid-covid-data-2020-monthly.cvs', index=False, header=True)
