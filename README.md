@@ -1,2 +1,10 @@
 # COMP20008 2021 Semester 1 Assignment 1
 Readme file
+Felix Wade
+997 220
+For part a task 1 I used isnan from numpy in order to convert the entries that had the value nan into 0.
+For part a task 2 I calculated the average fatality rate by dividing the total deaths by the total cases, I attempted to use the mean function however it was less accurate for some reason. My plots would not display from the command line, only from my notebook of working.
+For part b I had trouble with opening the article text files from the assignment directory, so i used os.chdir to temporarily change the directory when extracting the data from the text files, then used os.getcwd to change it back afterwards in order to be able to execute the rest of the part b files without having to manually change the directory.
+For part b task 3 I attempted to import the preprocessing function that I wrote in part b task 2, however i experienced errors while doing this so I just re used the function code.
+For part b task 4 I used the nltk stem porter to find the stem of all the relevant words, and i used the nltk word detokenizer in order to convert the preprocessed word list back into text form. I also had to ensure that only the text files in the cricket folder were being searched as there were often working notebooks or other files creeping in there.
+For part b task 5 I could not get the file to run the partb task 4 file to find the correct document ID's so i had to re use the same code with some adjustments made to increase efficiency and fit the task more, such as removing all the stop words from the text when preprocessing (using stopwords from nltk.corpus). I used a default dictionary to record the term frequencies in each text. I also used numpy and math dictionaries in order to compute the normalised query vector and the cosine similarity. I used Tfidftransform from sklearn to find the TF-IDF vectors for each document from the term frequencies array.
